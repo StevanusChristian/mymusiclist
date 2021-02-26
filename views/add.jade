@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    .header
+        .headertext MyMusicList
+
+    center(style='margin-top: 20px')
+        .contextheader
+            .contextheadertext Add Music
+
+    center
+        form(role='form' action='/add' method='POST')
+            table(style='width: 92%; border-top: none; height: 60px; border: 1px solid black;')
+                tbody
+                    tr
+                        td(class="form") Music Title
+                        td
+                            input(type="text" name='name' class='textfield')
+                    tr
+                        td(class="form") Artist
+                        td
+                            input(type="text" name='artist' class='textfield')
+                    tr
+                        td(class="form") Album
+                        td
+                            input(type="text" name='album' class='textfield')
+                    tr
+                        td(class="form") Genre
+                        td
+                            input(type="text" name='genre' class='textfield')
+                    tr
+                        td(class="form") Released
+                        td
+                            input(type="text" name='released' class='textfield')
+            table
+                tbody
+                    tr
+                        td
+                            a(href='/' class="form-controlsubcancel cancel") Cancel
+                        td
+                            input(type="submit" class="form-controlsub submit" value="Submit")
+
+    .footer
+        .footertext MyMusicList ©2021 All Rights Reserved.

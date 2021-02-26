@@ -1,0 +1,178 @@
+.header{
+    display: inline-flex;
+    margin-top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #4E08A7;
+}
+
+.headertext{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: #4E08A7;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.footertext{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.contextheader{
+    display: inline-block;
+    margin-top: 0px;
+    width: 92%;
+    height: 75px;
+    background-color: #4E08A7;
+}
+
+.contextheadertext{
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.form-controlsub{
+    width: 200px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+form .submit{
+    background-color: #4E08A7;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    height: 55px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 17px;
+}
+
+form .submit:hover{
+    background-color:#000;
+    cursor: pointer;
+}
+
+.form-controlsubcancel{
+    width: 200px;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+}
+
+form .cancel{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2px;
+    display: inline-block;
+    height: 42px;
+    margin-top: 7px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 17px;
+    border: 1px solid black;
+}
+
+form .cancel:hover{
+    background-color:#000;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.form{
+    font-family: sans-serif;
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.textfield{
+    width: 93%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.form-controlsubdelete{
+    width: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form .delete{
+    background-color: #aa0f0f;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 17px;
+    margin-top: 2px;
+}
+
+form .delete:hover{
+    background-color:#000;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: #4E08A7;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    margin-top: 5px;
+    padding-top: 7px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 17px;
+}
+
+.edit:hover{
+    background-color:#000;
+    cursor: pointer;
+}

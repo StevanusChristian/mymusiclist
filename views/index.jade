@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .header
+    .headertext MyMusicList
+  
+  li(style='margin-top: 15px; text-align: right; margin-right: 55px; font-family: sans-serif; margin-bottom: 10px; list-style-type: none;')
+    a(href='add' class='edit') Add
+
+  center
+    .contextheader
+      .contextheadertext Music List
+
+  center
+    table(rules='all' style='width: 92%; border-top: none; height: 60px; border: 1px solid black;')
+        tbody
+          tr(style='background-color: #E9E9E9;')
+            th(style='font-family: sans-serif;') #
+            th(style='text-align: left; font-family: sans-serif;') Music Title
+            th(style='font-family: sans-serif;') Artist
+            th(style='font-family: sans-serif;') Album
+            th(style='font-family: sans-serif;') Genre
+            th(style='font-family: sans-serif;') Released
+            th(style='font-family: sans-serif;') Action
+            for row, index in data
+              tr
+                td(style='font-family: sans-serif; text-align: center;') #{index+1}
+                td(style='font-family: sans-serif; padding: 5px') #{row.name}
+                td(style='font-family: sans-serif; text-align: center;') #{row.artist}
+                td(style='font-family: sans-serif; text-align: center;') #{row.album}
+                td(style='font-family: sans-serif; text-align: center;') #{row.genre}
+                td(style='font-family: sans-serif; text-align: center;') #{row.released}
+                td
+                  li(style='text-align: center; font-family: sans-serif; list-style-type: none;')
+                    a(href='/edit/#{row.id}' class="edit") Edit
+                  li(style='text-align: center; font-family: sans-serif; list-style-type: none;')
+                    form(action="/delete/#{row.id}" method='POST')
+                      input(type="hidden" name="_method" value="Delete")
+                      button(type='submit' class="form-controlsubdelete delete") Delete
+
+  .footer
+    .footertext MyMusicList ©2021 All Rights Reserved.

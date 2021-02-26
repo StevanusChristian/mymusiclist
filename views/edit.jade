@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    .header
+        .headertext MyMusicList
+
+    center(style='margin-top: 20px')
+        .contextheader
+            .contextheadertext Edit Music
+
+    center
+        form(role='form' action='/edit/#{(id==undefined) ? data.id : id}' method='POST')
+            table(style='width: 92%; border-top: none; height: 60px; border: 1px solid black;')
+                tbody
+                    tr
+                        td(class="form") Music Title
+                        td
+                            input(type="text" value='#{data.name}' name='name' class='textfield')
+                    tr
+                        td(class="form") Artist
+                        td
+                            input(type="text" value='#{(artist==undefined) ? data.artist : artist }' name='artist' class='textfield')
+                    tr
+                        td(class="form") Album
+                        td
+                            input(type="text" value='#{(album==undefined) ? data.album : album }' name='album' class='textfield')
+                    tr
+                        td(class="form") Genre
+                        td
+                            input(type="text" value='#{(genre==undefined) ? data.genre : genre }' name='genre' class='textfield')
+                    tr
+                        td(class="form") Released
+                        td
+                            input(type="text" value='#{(released==undefined) ? data.released : released }' name='released' class='textfield')
+            table
+                tbody
+                    tr
+                        td
+                            a(href='/' class="form-controlsubcancel cancel") Cancel
+                        td
+                            input(type="hidden" name="_method" value='PUT')
+                            input(type="submit" class="form-controlsub submit" value="Save")
+
+    .footer
+        .footertext MyMusicList ©2021 All Rights Reserved.
